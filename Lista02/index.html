@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário</title>
+</head>
+<body>
+  <h1><b>Formulário</b></h1>
+
+  <form>
+    <fieldset>
+      <legend>Dados pessoais</legend>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" size="50"><br><br>
+
+      <label for="nascimento">Data de nascimento:</label>
+      <input type="date" id="nascimento" name="nascimento"><br><br>
+
+      <label for="endereco">Endereço:</label>
+      <input type="text" id="endereco" name="endereco" size="50"><br><br>
+
+      <label for="bairro">Bairro:</label>
+      <input type="text" id="bairro" name="bairro">
+
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade"><br><br>
+
+      <label for="cep">CEP:</label>
+      <input type="text" id="cep" name="cep">
+
+      <label for="estado">Estado:</label>
+      <select id="estado" name="estado">
+        <option value="CE">Ceará</option>
+        <option value="SP">São Paulo</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="MT">Mato Grosso do Sul</option>
+        <option value="BA">Bahia</option>
+        
+      </select>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Dados profissionais</legend>
+
+      <label>Natureza do Cargo:</label><br>
+      <input type="radio" id="financeiro" name="cargo" value="Financeiro" checked>
+      <label for="Financeiro">Financeiro</label>
+
+      <input type="radio" id="gerencia" name="cargo" value="Garência">
+      <label for="Gerência">Garência</label>
+
+      <input type="radio" id="recepcao" name="cargo" value="Recepção">
+      <label for="recepcao">Recepção</label>
+
+      <input type="radio" id="administrativo" name="cargo" value="Administrativo">
+      <label for="adm">Administrativo</label>
+
+      <input type="radio" id="juridico" name="cargo" value="Jurídico">
+      <label for="juridico">Jurídico</label>
+
+      <br><br>
+
+      <label>Área de interesse:</label><br>
+      <input type="checkbox" id="computacao" name="interesse" value="Computação">
+      <label for="computacao">Computação</label>
+
+      <input type="checkbox" id="quimica" name="interesse" value="Química">
+      <label for="quimica">Química</label>
+
+      <input type="checkbox" id="meio" name="interesse" value="Meio Ambiente">
+      <label for="meio">Meio Ambiente</label>
+
+      <input type="checkbox" id="engenharia" name="interesse" value="Engenharia">
+      <label for="engenharia">Engenharia</label>
+
+      <input type="checkbox" id="matematica" name="interesse" value="Matemática">
+      <label for="matematica">Matemática</label>
+
+      <br><br>
+
+      <label for="curriculo">Mini-currículo:</label><br>
+      <textarea id="curriculo" name="curriculo" cols="60" rows="5"></textarea>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+  </form>
+</body>
+</html>
